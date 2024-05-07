@@ -15,7 +15,7 @@ public class UserHelperService {
     private static final Logger logger = LoggerFactory.getLogger(UserHelperService.class);
 
 public static String exec(String prefix, String attr, Map<String, Object> profile) {
-        
+    logger.debug("Retrieving user identified with prefix:{}, attr:{}, profile:{}", prefix, attr, profile);
         String uid = Optional.ofNullable(prefix).orElse("") + profile.get(attr).toString();
         
         //if not existing, insert user with the uid just built
@@ -36,18 +36,18 @@ public static String exec(String prefix, String attr, Map<String, Object> profil
     }
 
 public static String exec(String name) {
-    logger.error("\n\n\n Check user identified by name:{}", name);
+    logger.info("\n\n\n Check user identified by name:{}", name);
     String uid = name;
     
     //if not existing, insert user with the uid just built
     UserService userService = CdiUtil.bean(UserService.class);
-    logger.error("\n\n Retrieving user identified by {}", uid);
+    logger.debug("\n\n Retrieving user identified by {}", uid);
     User user = userService.getUser(uid);
-    logger.error("\n\n user identified by {} is {}", uid, user);
+    logger.info("\n\n user identified by {} is {}", uid, user);
     if (user != null) {
-        logger.error("Found user:{}!",user);
+        logger.info("Found user:{}!",user);
     } else {
-        logger.error("\n\n\n Not found. Inserting entry");
+        logger.info("\n\n\n Not found. Inserting entry");
         user = new User();
         user.setUserId(uid);
         userService.addUser(user, true);
