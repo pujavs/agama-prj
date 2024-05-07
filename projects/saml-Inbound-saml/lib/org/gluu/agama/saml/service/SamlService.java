@@ -84,7 +84,7 @@ public class SamlService {
         logger.info("Returning IDP details idpMap:{}", idpMap);
         return idpMap;
     }
-    
+
     private List<IdentityProvider> getIdpList() throws JsonProcessingException {
 
         logger.info("Fetch All IDP details");
@@ -99,38 +99,45 @@ public class SamlService {
 
         return idpList;
     }
-    
+
     public Map<String, Object> getIdpData(String idpAlias) throws JsonProcessingException, IOException {
-        logger.info("Get External IDP Data idpAlias:{}",idpAlias);
+        logger.info("Get External IDP Data idpAlias:{}", idpAlias);
         Map<String, Object> idpData = new HashMap<>();
 
         IdentityProvider idp = getIdpDetails(idpAlias);
         logger.info("idp:{}", idp);
         idpData.put("idp", idp);
-        //idpData.put("idpUrl", "https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754&redirect_uri=https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/account&response_type=code&kc_idp_hint=busy-starfish.gluu.info");
-        idpData.put("idpUrl", "https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754&redirect_uri=https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback&response_type=code&kc_idp_hint=busy-starfish.gluu.info");
-        
+        // idpData.put("idpUrl",
+        // "https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754&redirect_uri=https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/account&response_type=code&kc_idp_hint=busy-starfish.gluu.info");
+        idpData.put("idpUrl",
+                "https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754&redirect_uri=https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback&response_type=code&kc_idp_hint=busy-starfish.gluu.info");
+
         String redirectUrl = getRedirectUrl(idp);
         logger.info("\n\n\n Returning IDP details redirectUrl:{}, idpData:{}", redirectUrl, idpData);
         return idpData;
     }
 
     private IdentityProvider getIdpDetails(String idpAlias) throws JsonProcessingException, IOException {
-
-        logger.info("Fetch IDP details - idpAlias:{}, this.idpUrl:{}, samlConfig.getIdpUrl():{} ", idpAlias,
-                this.idpUrl, samlConfig.getIdpUrl());
-        String token = getToken();
-        logger.info("Access token:{}", token);
         IdentityProvider idp = null;
-        if (StringUtils.isBlank(idpAlias)) {
-            return idp;
-        }
+        try {
+            logger.info("Fetch IDP details - idpAlias:{}, this.idpUrl:{}, samlConfig.getIdpUrl():{} ", idpAlias,
+                    this.idpUrl, samlConfig.getIdpUrl());
+            String token = getToken();
+            logger.info("Access token:{}", token);
 
-        logger.info("Fetch IDP details for idp:{}", idp);
-        String json = samlClient.getIdpDetails(this.idpUrl, idpAlias, token);
-        logger.info("IDP json:{}", json);
-        idp = this.createIdentityProvider(json);
-        logger.info("IDP idpAlias:{}, idp:{}", idpAlias, idp);
+            if (StringUtils.isBlank(idpAlias)) {
+                return idp;
+            }
+
+            logger.info("Fetch IDP details for idp:{}", idp);
+            String idpUrl = samlUtil.getIdpUrl(this.serverUrl, this.idpUrl, this.realm);
+            String json = samlClient.getIdpDetails(idpUrl, idpAlias, token);
+            logger.info("IDP json:{}", json);
+            idp = this.createIdentityProvider(json);
+            logger.info("IDP idpAlias:{}, idp:{}", idpAlias, idp);
+        } catch (Exception ex) {
+            logger.error("Error while fetching details for IDP idpAlias:{}, is:{}", idpAlias, ex);
+        }
 
         return idp;
     }
@@ -234,17 +241,17 @@ public class SamlService {
 
         return idp;
     }
-    
+
     private String getRedirectUrl(IdentityProvider idp) {
-        logger.info("Create Redirect Url - idp:{}",idp );
+        logger.info("Create Redirect Url - idp:{}", idp);
         StringBuilder sb = new StringBuilder();
-        if(idp==null) {
-            sb.toString(); 
+        if (idp == null) {
+            sb.toString();
         }
-        //https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/
-        //openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754
-        //&redirect_uri=https://pujavs-advanced-ewe.gluu.info/jans-auth/agama.saml/callback&response_type=code&kc_idp_hint=busy-starfish.gluu.info"
-       
+        // https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/
+        // openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754
+        // &redirect_uri=https://pujavs-advanced-ewe.gluu.info/jans-auth/agama.saml/callback&response_type=code&kc_idp_hint=busy-starfish.gluu.info"
+
         sb.append(this.idpUrl);
         sb.append(this.realm);
         sb.append("/protocol/openid-connect/auth");
@@ -252,9 +259,9 @@ public class SamlService {
         sb.append(this.clientId);
         sb.append("&redirect_uri=");
         sb.append("https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback");
-        
-        logger.info("\n\n\n Create Redirect Url - sb:{}",sb );
-        
+
+        logger.info("\n\n\n Create Redirect Url - sb:{}", sb);
+
         return sb.toString();
     }
 
