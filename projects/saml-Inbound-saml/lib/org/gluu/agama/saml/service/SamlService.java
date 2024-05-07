@@ -111,7 +111,7 @@ public class SamlService {
         idpData.put("idpUrl", "https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754&redirect_uri=https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback&response_type=code&kc_idp_hint=busy-starfish.gluu.info");
         
         String redirectUrl = getRedirectUrl(idp);
-        logger.info("Returning IDP details redirectUrl:{}, idpData:{}", redirectUrl, idpData);
+        logger.info("\n\n\n Returning IDP details redirectUrl:{}, idpData:{}", redirectUrl, idpData);
         return idpData;
     }
 
@@ -237,10 +237,14 @@ public class SamlService {
     
     private String getRedirectUrl(IdentityProvider idp) {
         logger.info("Create Redirect Url - idp:{}",idp );
+        StringBuilder sb = new StringBuilder();
+        if(idp==null) {
+            sb.toString(); 
+        }
         //https://pujavs-advanced-ewe.gluu.info/kc/realms/jans/protocol/
         //openid-connect/auth?client_id=jans-307f57ee-8978-4426-8405-137e64bc4754
         //&redirect_uri=https://pujavs-advanced-ewe.gluu.info/jans-auth/agama.saml/callback&response_type=code&kc_idp_hint=busy-starfish.gluu.info"
-        StringBuilder sb = new StringBuilder();
+       
         sb.append(this.idpUrl);
         sb.append(this.realm);
         sb.append("/protocol/openid-connect/auth");
@@ -249,7 +253,7 @@ public class SamlService {
         sb.append("&redirect_uri=");
         sb.append("https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback");
         
-        logger.info("Create Redirect Url - sb:{}",sb );
+        logger.info("\n\n\n Create Redirect Url - sb:{}",sb );
         
         return sb.toString();
     }
