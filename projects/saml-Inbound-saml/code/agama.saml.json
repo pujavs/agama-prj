@@ -760,27 +760,74 @@
 		{
 			"width": 170,
 			"height": 123,
+			"id": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
+			"position": {
+				"x": 385.64616214695764,
+				"y": 189.6317403642537
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 385.64616214695764,
+					"y": 189.6317403642537
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
+					"parentId": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0",
+					"type": "Agama-assignment-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: true, data: obj}",
+							"assignedVariableName": "outcome"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 385.64616214695764,
+				"y": 189.6317403642537
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 123,
 			"id": "finish-5bb4ab0f-528f-4923-b18b-20ab9c42559a",
 			"position": {
-				"x": -79.68717118637574,
+				"x": 70.31282881362426,
 				"y": 410.965073697587
 			},
 			"type": "finish",
 			"data": {
 				"id": "finish-5bb4ab0f-528f-4923-b18b-20ab9c42559a",
 				"type": "Agama-finish-Flow",
-				"parentId": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0",
+				"parentId": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
 				"whenCondition": "",
 				"inRepeatBlock": "",
 				"inIterateBlock": "",
 				"handles": [],
 				"position": {
-					"x": -79.68717118637574,
+					"x": 70.31282881362426,
 					"y": 410.965073697587
 				},
 				"agamaData": {
 					"id": "finish-5bb4ab0f-528f-4923-b18b-20ab9c42559a",
-					"parentId": "Agama-call-Node-e6571e71-5800-4622-a15a-442a281730b6",
+					"parentId": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
 					"type": "Agama-finish-Flow",
 					"hasSuccess": false,
 					"hasFailure": false,
@@ -789,17 +836,20 @@
 					"flowfilename": "",
 					"returnVariable": "uid",
 					"finishMode": "withVariable",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"position": {
+						"x": 70.31282881362426
+					}
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
-				"x": -79.68717118637574,
+				"x": 70.31282881362426,
 				"y": 410.965073697587
 			},
 			"dragging": false,
-			"parentId": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0",
+			"parentId": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
 			"whenCondition": "",
 			"inRepeatBlock": "",
 			"inIterateBlock": ""
@@ -1090,9 +1140,26 @@
 			}
 		},
 		{
-			"id": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0-finish-5bb4ab0f-528f-4923-b18b-20ab9c42559a-5514b4aa-8070-4fd3-b51e-4fd5b273291b",
+			"id": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0-Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276-64d7816b-00c0-4b93-9e1a-ffd52300da46",
 			"type": "default",
 			"source": "Agama-log-Node-78e704ab-6b00-4a53-a747-6b83a3235bd0",
+			"target": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276-finish-5bb4ab0f-528f-4923-b18b-20ab9c42559a-852c1406-8268-4995-abcf-3fe56aa9d683",
+			"type": "default",
+			"source": "Agama-assignment-Node-8c3c8537-61b3-4c74-aaa9-9650f6a84276",
 			"target": "finish-5bb4ab0f-528f-4923-b18b-20ab9c42559a",
 			"label": "",
 			"labelBgPadding": [
@@ -1108,8 +1175,8 @@
 		}
 	],
 	"viewport": {
-		"x": 656.1371395450185,
-		"y": 110.37572497897341,
+		"x": 657.1371395450185,
+		"y": 111.37572497897341,
 		"zoom": 0.5
 	}
 }
