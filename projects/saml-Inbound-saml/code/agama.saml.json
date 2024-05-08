@@ -603,13 +603,13 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "idpData.idpUrl",
+					"logMessage": "idpData",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": -838.3190379226373,
@@ -795,9 +795,10 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 385.64616214695764,
 				"y": 189.6317403642537
@@ -1175,8 +1176,8 @@
 		}
 	],
 	"viewport": {
-		"x": 657.1371395450185,
-		"y": 111.37572497897341,
-		"zoom": 0.5
+		"x": 731,
+		"y": 17,
+		"zoom": 0.75
 	}
 }
