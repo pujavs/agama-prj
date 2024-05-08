@@ -20,7 +20,7 @@ extIdpData = RRF "saml-idp-discovery.ftlh" idpMap
 Log "@info " extIdpData.extIdp
 idpData | E = Call samlService getIdpData extIdpData.extIdp
 // Log idpData
-Log "@info " idpData.idpUrl
+Log "@info " idpData
 // Assign idpUrl
 idpUrl = "idpData.idpUrl"
 // Redirect to External IDP 
