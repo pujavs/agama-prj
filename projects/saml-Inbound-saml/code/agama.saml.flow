@@ -28,6 +28,8 @@ responseParams = RFAC idpUrl
 // Log external IDP response
 Log "@info Response data\n" samlResponse
 // Create user if not present
-uid | ex = Call samlService parseResponse idpMap
+obj | ex = Call samlService parseResponse samlResponse idpUrl
+// Log external token response
+Log "@info " obj
 // Finish with uid
 Finish uid
