@@ -18,7 +18,7 @@ Log "@info " idpMap
 extIdpData = RRF "saml-idp-discovery.ftlh" idpMap
 // Log extIdpData.extIdpRedirectUrl
 Log "@info " extIdpData.extIdp
-idpData | E = Call samlService getIdpData extIdpData.extIdp
+idpData = Call samlService getIdpData extIdpData.extIdp
 // Log idpData
 Log "@info " idpData
 // Assign idpUrl
@@ -27,7 +27,7 @@ url = "idpData.idpUrl"
 responseParams = RFAC url
 // Log external IDP response
 Log "@info Response data\n" samlResponse
-// Create user if not present
+// Parse External IDP response
 obj | ex = Call samlService parseResponse samlResponse idpUrl
 // Log external token response
 Log "@info " obj
