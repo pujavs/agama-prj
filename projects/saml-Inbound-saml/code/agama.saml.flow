@@ -24,7 +24,7 @@ Log "@info " idpData
 // Assign idpUrl
 url = "idpData.idpUrl"
 // Redirect to External IDP 
-responseParams = RFAC idpUrl
+responseParams = RFAC url
 // Log external IDP response
 Log "@info Response data\n" samlResponse
 // Create user if not present
