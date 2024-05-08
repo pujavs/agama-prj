@@ -86,7 +86,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": -165.68717118637568,
@@ -663,8 +663,8 @@
 			"height": 123,
 			"id": "Agama-rfac-Node-d6d0f106-8b2a-4923-a380-8d7609d3475b",
 			"position": {
-				"x": -598.5521023263718,
-				"y": 198.02826931091255
+				"x": -599.8854356597051,
+				"y": 196.69493597757923
 			},
 			"type": "rfac",
 			"data": {
@@ -675,8 +675,8 @@
 				"inRepeatBlock": "",
 				"inIterateBlock": "",
 				"position": {
-					"x": -598.5521023263718,
-					"y": 198.02826931091255
+					"x": -599.8854356597051,
+					"y": 196.69493597757923
 				},
 				"agamaData": {
 					"id": "Agama-rfac-Node-d6d0f106-8b2a-4923-a380-8d7609d3475b",
@@ -690,17 +690,17 @@
 					"inIterateBlock": false,
 					"nodeIcon": "ic:baseline-insert-link",
 					"idpAuthEndpoint": "idpData.idpUrl",
-					"assignCallbackResult": "samlResponse",
+					"assignCallbackResult": "responseParams",
 					"position": {
 						"x": -847.6871711863757
 					}
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": -598.5521023263718,
-				"y": 198.02826931091255
+				"x": -599.8854356597051,
+				"y": 196.69493597757923
 			},
 			"dragging": false,
 			"parentId": "Agama-log-Node-01c60fe8-b000-4896-8e20-dc523671091d",
@@ -978,8 +978,8 @@
 		}
 	],
 	"viewport": {
-		"x": 804.7601962989352,
-		"y": 232.3399042065633,
-		"zoom": 0.5683937124413992
+		"x": 942.1402498316745,
+		"y": 220.13554770084977,
+		"zoom": 0.5683937124413996
 	}
 }
