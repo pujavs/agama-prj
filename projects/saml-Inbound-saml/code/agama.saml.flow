@@ -31,5 +31,6 @@ Log "@info Response data\n" samlResponse
 obj | ex = Call samlService parseResponse samlResponse idpUrl
 // Log external token response
 Log "@info " obj
+outcome = "{ success: true, data: obj}"
 // Finish with uid
 Finish uid
