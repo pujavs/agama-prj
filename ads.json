@@ -48,7 +48,7 @@
     },
     "agama-inbound-saml": {
         "projectName": "agama-inbound-saml",
-        "description": "Inbound SAML",
+        "description": "Jans Inbound SAML",
         "type": "community",
         "author": "pujavs",
         "version": "0.0.1",
@@ -60,6 +60,7 @@
             "jans"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {},
+        "name": "agama-inbound-saml"
     }
 }
