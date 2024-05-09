@@ -28,7 +28,7 @@
 			[#if idps?size&gt;0]
 			[#list idps as idp]
 			<div class="text-sm flex justify-center items-center">
-			  <button type="submit" name="extIdp" value="${idp.alias}" class="w-80 py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600">${idp.alias}</button>
+			  <button type="submit" name="selection" value="${idp.alias}" class="w-80 py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600">${idp.alias}</button>
 			</div>
 			[/#list]
 			[/#if]
