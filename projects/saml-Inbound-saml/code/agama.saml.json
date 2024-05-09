@@ -99,8 +99,8 @@
 			"dragging": false
 		},
 		{
-			"width": 168,
-			"height": 120,
+			"width": 170,
+			"height": 123,
 			"id": "Agama-start-Flow-a1e9cbd2-e12b-44d9-84a9-ea9d26c3233a",
 			"type": "start",
 			"sourcePosition": "right",
@@ -131,7 +131,7 @@
 					"hasNoRepeat": false,
 					"hasRepeat": false
 				},
-				"skake": true
+				"skake": false
 			},
 			"position": {
 				"x": -1394.5452994845296,
@@ -1214,8 +1214,8 @@
 		}
 	],
 	"viewport": {
-		"x": 842.9732759326454,
-		"y": 204.35882932073514,
-		"zoom": 0.5
+		"x": 1011,
+		"y": 272,
+		"zoom": 0.75
 	}
 }
