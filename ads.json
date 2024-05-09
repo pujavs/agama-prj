@@ -45,5 +45,21 @@
             "org.gluu.agama.saml.flow": {}
         },
         "name": "saml-Inbound-saml"
+    },
+    "inbound-saml": {
+        "projectName": "inbound-saml",
+        "description": "Jans Inbound SAML",
+        "type": "community",
+        "author": "pujavs",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/pujavs/agama-prj",
+        "githubUri": "https://github.com/pujavs/agama-prj",
+        "license": "apache-2.0",
+        "lastUpdated": "1715270511948",
+        "tags": [
+            "jans"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
