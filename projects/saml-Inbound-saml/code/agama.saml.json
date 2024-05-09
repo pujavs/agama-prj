@@ -99,8 +99,8 @@
 			"dragging": false
 		},
 		{
-			"width": 168,
-			"height": 120,
+			"width": 170,
+			"height": 123,
 			"id": "Agama-start-Flow-a1e9cbd2-e12b-44d9-84a9-ea9d26c3233a",
 			"type": "start",
 			"sourcePosition": "right",
@@ -131,7 +131,7 @@
 					"hasNoRepeat": false,
 					"hasRepeat": false
 				},
-				"skake": true
+				"skake": false
 			},
 			"position": {
 				"x": -1368.5452994845296,
@@ -346,7 +346,7 @@
 			"height": 123,
 			"id": "Agama-rrf-Node-bf3732f9-a7f8-463d-8f83-4f7d52897885",
 			"position": {
-				"x": -855.6530003234941,
+				"x": -854.3196669901608,
 				"y": -2.9483127901957573
 			},
 			"type": "rrf",
@@ -358,7 +358,7 @@
 				"inRepeatBlock": "",
 				"inIterateBlock": "",
 				"position": {
-					"x": -855.6530003234941,
+					"x": -854.3196669901608,
 					"y": -2.9483127901957573
 				},
 				"agamaData": {
@@ -383,7 +383,7 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": -855.6530003234941,
+				"x": -854.3196669901608,
 				"y": -2.9483127901957573
 			},
 			"dragging": false,
@@ -808,7 +808,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "data.selection",
+							"assignmentExpression": "extIdpData.selection",
 							"assignedVariableName": "providerId"
 						}
 					],
@@ -816,7 +816,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": -1094.3196669901608,
 				"y": -0.28164612352912854
@@ -859,7 +859,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": -1337.5804980092923,
 				"y": -14.368259635746426
@@ -1214,8 +1214,8 @@
 		}
 	],
 	"viewport": {
-		"x": 967.2130474076284,
-		"y": 164.59892647744869,
-		"zoom": 0.5683937124413995
+		"x": 1114,
+		"y": 252,
+		"zoom": 0.75
 	}
 }
