@@ -44,7 +44,8 @@
                 "idpUrl": "/admin/realms/%s/identity-provider/instances",
                 "extIDPTokenUrl": "/realms/%s/broker/%s/token"
             },
-            "org.gluu.agama.saml.ExternalIDPFlow": {}
+            "org.gluu.agama.saml.ExternalIDPFlow": {},
+            "org.gluu.agama.saml.flow": {}
         },
         "name": "saml-Inbound-saml"
     }
