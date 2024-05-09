@@ -116,14 +116,14 @@ public class SamlService {
         logger.info("\n\n\n Returning IDP details redirectUrl:{}, idpData:{}", redirectUrl, idpData);
         return idpData;
     }
-    
-    public String parseResponse(Map<String, Object> responseData, String extIdpUrl, String state)throws JsonProcessingException {
-        logger.info("\n\n\n responseData:{}, state:{} \n\n ",responseData, state);
+
+    public String parseResponse(Map<String, Object> responseData, String extIdpUrl, String state)
+            throws JsonProcessingException {
+        logger.info("\n\n\n responseData:{}, state:{} \n\n ", responseData, state);
         String result = this.getExtIDPToken(extIdpUrl);
-        logger.info("\n\n\n getExtIDPToken - result:{} \n\n ",result);
+        logger.info("\n\n\n getExtIDPToken - result:{} \n\n ", result);
         return result;
     }
-    
 
     private IdentityProvider getIdpDetails(String idpAlias) throws JsonProcessingException, IOException {
         IdentityProvider idp = null;
