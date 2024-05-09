@@ -60,7 +60,9 @@
             "jans"
         ],
         "noDirectLaunch": [],
-        "configs": {},
+        "configs": {
+            "org.gluu.inbound.openid.flow": {}
+        },
         "name": "agama-inbound-saml"
     }
 }
