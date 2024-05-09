@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Agama-start-Flow-883fc15f-67bc-46dc-82ac-6b1bfabdcb44",
+    "type": "start",
+    "sourcePosition": "right",
+    "data": {
+      "id": "Agama-start-Flow-883fc15f-67bc-46dc-82ac-6b1bfabdcb44",
+      "type": "Agama-start-Flow",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "inRepeatBlock": false,
+      "agamaData": {
+        "id": "Agama-start-Flow-883fc15f-67bc-46dc-82ac-6b1bfabdcb44",
+        "type": "Agama-start-Flow",
+        "displayName": "External IDP Redirect",
+        "hasComment": true,
+        "comment": "",
+        "isTopLevelFlow": true,
+        "basepath": "",
+        "configParams": "{}",
+        "nodeIcon": "material-symbols:line-start-square",
+        "timeout": "",
+        "inputs": "",
+        "configs": "",
+        "flowname": "org.gluu.agama.saml.ExternalIDPFlow"
+      }
+    },
+    "position": {
+      "x": 30,
+      "y": 30
+    }
+  }
+]
