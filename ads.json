@@ -12,7 +12,9 @@
         "tags": [
             "authentication"
         ],
-        "noDirectLaunch": [],
+        "noDirectLaunch": [
+            "org.gluu.agama.saml.ExternalIDPFlow"
+        ],
         "configs": {
             "": {
                 "serverUrl": "https://pujavs-advanced-ewe.gluu.info/kc",
