@@ -16,6 +16,8 @@ idpMap | ex = Call samlService getIdps
 Log "@info " idpMap
 // Display SAML IDP Discovery Page
 extIdpData = RRF "saml-idp-discovery.ftlh" idpMap
+// Assign selected external IDP to a variable
+providerId = "data.selection"
 // Log extIdpData.extIdpRedirectUrl
 Log "@info " extIdpData.extIdp
 idpData = Call samlService getIdpData extIdpData.extIdp
