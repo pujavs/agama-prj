@@ -2,4 +2,5 @@ Flow agama.saml
      Basepath ""
      Timeout 500 seconds
      Configs kcConf
-Log "@info " Log config
+// Log conf properties
+Log "@info " kcConf
