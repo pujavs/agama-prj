@@ -1,2 +1,12 @@
 Flow org.gluu.agama.saml.ExternalIDPFlow
      Basepath ""
+     Inputs url
+// Log External IDP URL
+Log "@info Redirecting to external IDP \n" url
+// Redirect to External IDP 
+extResponse = RFAC url
+Log "@info "  "Response data\n" extResponse
+// Assign external IDP Response to a variable
+data = "extResponse"
+// Return external IDP response and finish the flow	
+Finish data
