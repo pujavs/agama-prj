@@ -15,8 +15,8 @@ public class UserHelperService {
 
     public static String exec(String prefix, String attr, Map<String, Object> profile) {
         logger.debug("Retrieving user identified with prefix:{}, attr:{}, profile:{}", prefix, attr, profile);
-        String uid = Optional.ofNullable(prefix).orElse("") + profile.get(attr).toString();
-
+       // String uid = Optional.ofNullable(prefix).orElse("") + profile.get(attr).toString();
+        String uid = prefix;
         // if not existing, insert user with the uid just built
         UserService userService = CdiUtil.bean(UserService.class);
         logger.debug("Retrieving user identified by {}", uid);
@@ -26,27 +26,6 @@ public class UserHelperService {
             logger.debug("Found!");
         } else {
             logger.debug("Not found. Inserting entry");
-            user = new User();
-            user.setUserId(uid);
-            userService.addUser(user, true);
-        }
-        return uid;
-
-    }
-
-    public static String exec(String name, Map samlResponse) {
-        logger.info("\n\n\n Check user identified by name:{}, samlResponse:{}", name, samlResponse);
-        String uid = name;
-
-        // if not existing, insert user with the uid just built
-        UserService userService = CdiUtil.bean(UserService.class);
-        logger.debug("\n\n Retrieving user identified by {}", uid);
-        User user = userService.getUser(uid);
-        logger.info("\n\n user identified by {} is {}", uid, user);
-        if (user != null) {
-            logger.info("Found user:{}!", user);
-        } else {
-            logger.info("\n\n\n Not found. Inserting entry");
             user = new User();
             user.setUserId(uid);
             userService.addUser(user, true);
