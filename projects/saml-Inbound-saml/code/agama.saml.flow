@@ -2,3 +2,6 @@ Flow agama.saml
      Basepath ""
      Timeout 500 seconds
      Configs kcConf
+Log "@ " __________
+// Log conf properties
+Log "@info " kcConf.serverUrl kcConf.realm kcConf.clientId
