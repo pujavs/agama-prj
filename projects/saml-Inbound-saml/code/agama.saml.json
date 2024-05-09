@@ -867,13 +867,13 @@
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "Log config",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
 				},
 				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": -1154.5452994845296,
 				"y": -214.18238323317695
@@ -915,7 +915,7 @@
 				"skake": false,
 				"inIterateBlock": ""
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": -918.6293712682473,
 				"y": -223.87605889615782
