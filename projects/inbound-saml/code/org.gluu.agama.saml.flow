@@ -19,5 +19,5 @@ Log "@info Response data\n" samlResponse
 parsedResponse = Call samlService parseResponse samlResponse  providerId
 // Final result
 outcome = { success: true, data: parsedResponse }
-it_xlxdj = {success:true, data: { userId: "puja", property1: "value1"}}
-Finish it_xlxdj
+it_xyysi = {success:true, data: { userId: "puja", property1: "value1"}}
+Finish it_xyysi
