@@ -1,35 +1,52 @@
-[
-  {
-    "id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
-    "type": "start",
-    "sourcePosition": "right",
-    "data": {
-      "id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
-      "type": "Agama-start-Flow",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "inRepeatBlock": false,
-      "agamaData": {
-        "id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
-        "type": "Agama-start-Flow",
-        "displayName": "Inbound SAML Flow",
-        "hasComment": true,
-        "comment": "",
-        "isTopLevelFlow": true,
-        "basepath": "",
-        "configParams": "{}",
-        "nodeIcon": "material-symbols:line-start-square",
-        "timeout": "",
-        "inputs": "",
-        "configs": "",
-        "flowname": "org.gluu.agama.saml"
-      }
-    },
-    "position": {
-      "x": 30,
-      "y": 30
-    }
-  }
-]
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 123,
+			"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 30,
+					"y": 28.666666666666686
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+					"type": "Agama-start-Flow",
+					"displayName": "Inbound SAML Flow",
+					"hasComment": true,
+					"comment": "",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{\n  \"serverUrl\": \"https://pujavs-advanced-ewe.gluu.info/kc\",\n  \"realm\": \"jans\",\n  \"clientId\": \"jans-307f57ee-8978-4426-8405-137e64bc4754\",\n  \"clientSecret\": \"ea98a240e6e0e4ebb397\",\n  \"grantType\": \"PASSWORD\",\n  \"scope\": \"openid\",\n  \"username\": \"jans\",\n  \"password\": \"7fc7acafcd063ba576a9\",\n  \"spMetadataUrl\": \"/realms/%s/broker/%s/endpoint/descriptor\",\n  \"tokenUrl\": \"/realms/%s/protocol/openid-connect/token\",\n  \"idpUrl\": \"/admin/realms/%s/identity-provider/instances\",\n  \"extIDPTokenUrl\": \"/realms/%s/broker/%s/token\"\n}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "conf",
+					"flowname": "org.gluu.agama.saml"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 30,
+				"y": 28.666666666666686
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 30,
+				"y": 28.666666666666686
+			}
+		}
+	],
+	"edges": [],
+	"viewport": {
+		"x": 10,
+		"y": 216,
+		"zoom": 0.75
+	}
+}
