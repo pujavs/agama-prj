@@ -1,3 +1,9 @@
 Flow org.gluu.agama.saml
      Basepath ""
      Configs conf
+// Log Config details
+Log "@info " conf
+// Create instance of SamlService
+samlService | ex = Call org.gluu.agama.saml.service.SamlService#new conf
+// Log samlService instance
+Log "@info " samlService
