@@ -3,6 +3,139 @@
 		{
 			"width": 170,
 			"height": 123,
+			"id": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+			"position": {
+				"x": 312.8684072112512,
+				"y": 26
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 312.8684072112512,
+					"y": 26
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+					"parentId": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+					"type": "Agama-log-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Log samlService instance",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "samlService",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 312.8684072112512,
+				"y": 26
+			}
+		},
+		{
+			"width": 170,
+			"height": 123,
+			"id": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+			"position": {
+				"x": 86.2017405445846,
+				"y": 26
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 86.2017405445846,
+					"y": 26
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+					"parentId": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+					"type": "Agama-call-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Create instance of SamlService",
+					"javaClassName": "org.gluu.agama.saml.service.SamlService",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "ex",
+					"callType": "Create an instance",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"arguments": [
+						"conf"
+					],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "samlService"
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 86.2017405445846,
+				"y": 26
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 123,
+			"id": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+			"position": {
+				"x": -141.7563486113878,
+				"y": 25.71905522170141
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": -141.7563486113878,
+					"y": 25.71905522170141
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+					"parentId": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+					"type": "Agama-log-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Log Config details",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "conf",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": -141.7563486113878,
+				"y": 25.71905522170141
+			},
+			"dragging": false
+		},
+		{
+			"width": 168,
+			"height": 120,
 			"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
 			"type": "start",
 			"sourcePosition": "right",
@@ -10,8 +143,8 @@
 				"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
 				"type": "Agama-start-Flow",
 				"position": {
-					"x": 30,
-					"y": 28.666666666666686
+					"x": -360.32214500576197,
+					"y": 28.989522288993157
 				},
 				"inRepeatBlock": false,
 				"agamaData": {
@@ -29,24 +162,76 @@
 					"configs": "conf",
 					"flowname": "org.gluu.agama.saml"
 				},
-				"skake": false
+				"skake": true
 			},
 			"position": {
-				"x": 30,
-				"y": 28.666666666666686
+				"x": -360.32214500576197,
+				"y": 28.989522288993157
 			},
 			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 30,
-				"y": 28.666666666666686
+				"x": -360.32214500576197,
+				"y": 28.989522288993157
 			}
 		}
 	],
-	"edges": [],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604-Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9-42ddc38f-b536-4162-b71a-15aeb205c2cd",
+			"type": "default",
+			"source": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+			"target": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9-Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769-c2a39e66-f1d9-4cb1-81a0-8a0d666cb109",
+			"type": "default",
+			"source": "Agama-log-Node-12db66a5-ad84-41fa-a0ad-cda34d71c0a9",
+			"target": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769-Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b-e5dbc690-a99b-4168-a882-cccd31e7f5ac",
+			"type": "default",
+			"source": "Agama-call-Node-aaf44ece-b502-428f-8d21-98ecd6755769",
+			"target": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
 	"viewport": {
-		"x": 10,
-		"y": 216,
-		"zoom": 0.75
+		"x": 399.9027704726049,
+		"y": 152.92781038653683,
+		"zoom": 0.7499999999999999
 	}
 }
