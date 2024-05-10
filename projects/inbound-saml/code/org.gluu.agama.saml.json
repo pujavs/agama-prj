@@ -6,7 +6,7 @@
 			"id": "finish-9ba787cc-0b39-4ccd-9df3-7d111bbac4c8",
 			"position": {
 				"x": -5.811377944999094,
-				"y": 451.3333333333333
+				"y": 453.3333333333333
 			},
 			"type": "finish",
 			"data": {
@@ -19,7 +19,7 @@
 				"handles": [],
 				"position": {
 					"x": -5.811377944999094,
-					"y": 451.3333333333333
+					"y": 453.3333333333333
 				},
 				"agamaData": {
 					"id": "finish-9ba787cc-0b39-4ccd-9df3-7d111bbac4c8",
@@ -32,13 +32,15 @@
 					"flowfilename": "",
 					"returnVariable": "{ userId: \"puja\", property1: \"value1\"}",
 					"finishMode": "withSuccess",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Finish Flow"
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
 				"x": -5.811377944999094,
-				"y": 451.3333333333333
+				"y": 453.3333333333333
 			},
 			"dragging": false
 		},
@@ -80,7 +82,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -130,7 +133,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "parsedResponse"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -172,7 +176,8 @@
 					"logMessage": "\"Response data\\n\" samlResponse ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -214,7 +219,8 @@
 					"nodeIcon": "ic:baseline-insert-link",
 					"idpAuthEndpoint": "idpData.idpUrl",
 					"assignCallbackResult": "samlResponse"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -263,7 +269,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "idpData"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -310,7 +317,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -354,7 +362,8 @@
 					"templatePath": "saml-idp-discovery.ftlh",
 					"asssignedVariableName": "extIdpData",
 					"arguments": "idpMap"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -797,8 +806,8 @@
 		}
 	],
 	"viewport": {
-		"x": 411.60739693744864,
-		"y": 86.92781038653692,
-		"zoom": 0.7499999999999999
+		"x": 483.7258697978405,
+		"y": 97.5333302815755,
+		"zoom": 0.5
 	}
 }
