@@ -8,3 +8,16 @@ samlService | ex = Call org.gluu.agama.saml.service.SamlService#new conf
 // Log samlService instance
 Log "@info " samlService
 idpMap | ex = Call samlService getIdps 
+// Display SAML IDP Discovery Page
+extIdpData = RRF "saml-idp-discovery.ftlh" idpMap
+providerId = "extIdpData.selection"
+idpData | ex = Call samlService getIdpData providerId
+// Redirect to External IDP 
+samlResponse = RFAC idpData.idpUrl
+// Log external IDP response
+Log "@info Response data\n" samlResponse 
+parsedResponse = Call samlService parseResponse samlResponse  providerId
+// Final result
+outcome = { success: true, data: parsedResponse }
+it_tkepo = {success:true, data: { userId: "puja", property1: "value1"}}
+Finish it_tkepo
