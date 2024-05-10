@@ -10,7 +10,7 @@ Log "@info " samlService
 idpMap | ex = Call samlService getIdps 
 // Display SAML IDP Discovery Page
 extIdpData = RRF "saml-idp-discovery.ftlh" idpMap
-providerId = "extIdpData.selection"
+providerId = extIdpData.selection
 idpData | ex = Call samlService getIdpData providerId
 // Redirect to External IDP 
 samlResponse = RFAC idpData.idpUrl
@@ -20,5 +20,5 @@ Log "@info Response data from external IDP is \n" samlResponse
 parsedResponse = Call samlService processIDPResponse samlResponse  providerId
 // Final result
 outcome = { success: true, data: parsedResponse }
-it_chalj = {success:true, data: { userId: "puja", property1: "value1"}}
-Finish it_chalj
+it_wzotl = {success:true, data: { userId: "puja", property1: "value1"}}
+Finish it_wzotl
