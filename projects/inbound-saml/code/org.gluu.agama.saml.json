@@ -3,6 +3,53 @@
 		{
 			"width": 170,
 			"height": 123,
+			"id": "Agama-call-Node-d38973ab-56ea-4f50-be02-01d51d8f8920",
+			"position": {
+				"x": 514.2017405445845,
+				"y": 26
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-d38973ab-56ea-4f50-be02-01d51d8f8920",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 514.2017405445845,
+					"y": 26
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-d38973ab-56ea-4f50-be02-01d51d8f8920",
+					"parentId": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+					"type": "Agama-call-Node",
+					"displayName": "Get list of configured IDP",
+					"hasComment": true,
+					"comment": "",
+					"javaClassName": "",
+					"javaMethodName": "getIdps",
+					"javaVariableName": "samlService",
+					"exceptionVariableField": "ex",
+					"callType": "Call method on instance",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "idpMap"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 514.2017405445845,
+				"y": 26
+			}
+		},
+		{
+			"width": 170,
+			"height": 123,
 			"id": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
 			"position": {
 				"x": 312.8684072112512,
@@ -33,7 +80,8 @@
 					"logMessage": "samlService",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -82,7 +130,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "samlService"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -124,7 +173,8 @@
 					"logMessage": "conf",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -134,8 +184,8 @@
 			"dragging": false
 		},
 		{
-			"width": 168,
-			"height": 120,
+			"width": 170,
+			"height": 123,
 			"id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
 			"type": "start",
 			"sourcePosition": "right",
@@ -162,13 +212,13 @@
 					"configs": "conf",
 					"flowname": "org.gluu.agama.saml"
 				},
-				"skake": true
+				"skake": false
 			},
 			"position": {
 				"x": -360.32214500576197,
 				"y": 28.989522288993157
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": -360.32214500576197,
@@ -227,11 +277,28 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b-Agama-call-Node-d38973ab-56ea-4f50-be02-01d51d8f8920-b4c90843-022e-451d-882e-9359861a74a7",
+			"type": "default",
+			"source": "Agama-log-Node-46da3e81-2352-4717-b99d-7cc4f3d9ae4b",
+			"target": "Agama-call-Node-d38973ab-56ea-4f50-be02-01d51d8f8920",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": 399.9027704726049,
-		"y": 152.92781038653683,
+		"x": 402.9027704726049,
+		"y": 162.92781038653683,
 		"zoom": 0.7499999999999999
 	}
 }
