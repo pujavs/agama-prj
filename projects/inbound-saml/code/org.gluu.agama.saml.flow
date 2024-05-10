@@ -15,9 +15,10 @@ idpData | ex = Call samlService getIdpData providerId
 // Redirect to External IDP 
 samlResponse = RFAC idpData.idpUrl
 // Log external IDP response
-Log "@info Response data\n" samlResponse 
-parsedResponse = Call samlService parseResponse samlResponse  providerId
+Log "@info Response data from external IDP is \n" samlResponse 
+// Parse external response
+parsedResponse = Call samlService processIDPResponse samlResponse  providerId
 // Final result
 outcome = { success: true, data: parsedResponse }
-it_xyysi = {success:true, data: { userId: "puja", property1: "value1"}}
-Finish it_xyysi
+it_chalj = {success:true, data: { userId: "puja", property1: "value1"}}
+Finish it_chalj
