@@ -1,0 +1,35 @@
+[
+  {
+    "id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+    "type": "start",
+    "sourcePosition": "right",
+    "data": {
+      "id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+      "type": "Agama-start-Flow",
+      "position": {
+        "x": 30,
+        "y": 30
+      },
+      "inRepeatBlock": false,
+      "agamaData": {
+        "id": "Agama-start-Flow-46431251-7323-49df-92e9-bf98c3595604",
+        "type": "Agama-start-Flow",
+        "displayName": "Inbound SAML Flow",
+        "hasComment": true,
+        "comment": "",
+        "isTopLevelFlow": true,
+        "basepath": "",
+        "configParams": "{}",
+        "nodeIcon": "material-symbols:line-start-square",
+        "timeout": "",
+        "inputs": "",
+        "configs": "",
+        "flowname": "org.gluu.agama.saml"
+      }
+    },
+    "position": {
+      "x": 30,
+      "y": 30
+    }
+  }
+]
