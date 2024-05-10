@@ -53,6 +53,21 @@ public class SamlService {
         logger.error(" \\n\\n\\n  this.serverUrl :{}", this.serverUrl);
         if(configData!=null) {
             logger.error(" \\n\\n\\n  configData.get(\"serverUrl\") :{}", configData.get("serverUrl"));
+            this.serverUrl = serverUrl;
+            this.realm = realm;
+            this.clientId = clientId;
+            this.clientSecret = clientSecret;
+            this.grantType = grantType;
+            this.scope = scope;
+            this.username = username;
+            this.password = password;
+            this.spMetadataUrl = spMetadataUrl;
+            this.tokenUrl = tokenUrl;
+            this.idpUrl = idpUrl;
+            this.extIDPTokenUrl = extIDPTokenUrl;
+
+            this.samlConfig = new SamlConfig(serverUrl, realm, clientId, clientSecret, grantType, scope, username, password,
+                    spMetadataUrl, tokenUrl, idpUrl, extIDPTokenUrl);
         }
     }
 
