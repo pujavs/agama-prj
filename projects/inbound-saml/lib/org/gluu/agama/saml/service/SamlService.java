@@ -141,9 +141,9 @@ public class SamlService {
         return idpData;
     }
 
-    public String parseResponse(Map<String, Object> responseData, String extIdpUrl, String state)
+    public String processIDPResponse(Map<String, Object> responseData, String extIdpUrl)
             throws JsonProcessingException {
-        logger.info("\n\n\n responseData:{}, state:{} \n\n ", responseData, state);
+        logger.info("\n\n\n responseData:{}, extIdpUrl:{} \n\n ", responseData, extIdpUrl);
         String result = this.getExtIDPToken(extIdpUrl);
         logger.info("\n\n\n getExtIDPToken - result:{} \n\n ", result);
         return result;
