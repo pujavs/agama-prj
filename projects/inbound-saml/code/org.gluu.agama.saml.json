@@ -49,7 +49,7 @@
 			"height": 123,
 			"id": "Agama-assignment-Node-a8f516e5-ef6d-49d9-862e-bf079d38679e",
 			"position": {
-				"x": -247.1447112783325,
+				"x": -245.81137794499918,
 				"y": 451.33333333333326
 			},
 			"type": "assignment",
@@ -61,7 +61,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": -247.1447112783325,
+					"x": -245.81137794499918,
 					"y": 451.33333333333326
 				},
 				"agamaData": {
@@ -87,7 +87,7 @@
 			},
 			"selected": true,
 			"positionAbsolute": {
-				"x": -247.1447112783325,
+				"x": -245.81137794499918,
 				"y": 451.33333333333326
 			},
 			"dragging": false
