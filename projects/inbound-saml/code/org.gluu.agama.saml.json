@@ -85,7 +85,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": -247.1447112783325,
 				"y": 451.33333333333326
@@ -136,7 +136,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": -255.14471127833244,
 				"y": 247.33333333333348
@@ -284,8 +284,8 @@
 			"height": 123,
 			"id": "Agama-assignment-Node-8d218ab0-36b7-41e8-a80b-c50c928f99cf",
 			"position": {
-				"x": 746.2017405445845,
-				"y": 219.33333333333331
+				"x": 750.2017405445845,
+				"y": 220.66666666666657
 			},
 			"type": "assignment",
 			"data": {
@@ -296,8 +296,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 746.2017405445845,
-					"y": 219.33333333333331
+					"x": 750.2017405445845,
+					"y": 220.66666666666657
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-8d218ab0-36b7-41e8-a80b-c50c928f99cf",
@@ -311,7 +311,7 @@
 					"inIterateBlock": false,
 					"assignments": [
 						{
-							"variableTypeCheck": true,
+							"variableTypeCheck": false,
 							"assignmentExpression": "extIdpData.selection",
 							"assignedVariableName": "providerId"
 						}
@@ -322,8 +322,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 746.2017405445845,
-				"y": 219.33333333333331
+				"x": 750.2017405445845,
+				"y": 220.66666666666657
 			},
 			"dragging": false
 		},
@@ -806,8 +806,8 @@
 		}
 	],
 	"viewport": {
-		"x": 418,
-		"y": 77,
+		"x": 356,
+		"y": 57,
 		"zoom": 0.75
 	}
 }
