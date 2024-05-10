@@ -61,21 +61,7 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.saml.flow": {},
-            "org.gluu.agama.saml": {
-                "serverUrl": "https://pujavs-advanced-ewe.gluu.info/kc",
-                "realm": "jans",
-                "clientId": "jans-307f57ee-8978-4426-8405-137e64bc4754",
-                "clientSecret": "ea98a240e6e0e4ebb397",
-                "grantType": "PASSWORD",
-                "scope": "openid",
-                "username": "jans",
-                "password": "7fc7acafcd063ba576a9",
-                "spMetadataUrl": "/realms/%s/broker/%s/endpoint/descriptor",
-                "tokenUrl": "/realms/%s/protocol/openid-connect/token",
-                "idpUrl": "/admin/realms/%s/identity-provider/instances",
-                "extIDPTokenUrl": "/realms/%s/broker/%s/token"
-            }
+            "org.gluu.agama.saml.flow": {}
         },
         "name": "inbound-saml"
     }
