@@ -47,6 +47,15 @@ public class SamlService {
         logger.error("SamlService constructor");
         logger.error(" this.serverUrl :{}", this.serverUrl);
     }
+    
+    public SamlService(Map<String,Object> configData) {
+        logger.error("\n\n\n SamlService constructor with Map - configData:{}",configData);
+        logger.error(" \\n\\n\\n  this.serverUrl :{}", this.serverUrl);
+        if(configData!=null) {
+            logger.error(" \\n\\n\\n  configData.get(\"serverUrl\") :{}", configData.get("serverUrl"));
+        }
+    }
+
 
     public SamlService(String serverUrl, String realm, String clientId, String clientSecret, String grantType,
             String scope, String username, String password, String spMetadataUrl, String tokenUrl, String idpUrl,
