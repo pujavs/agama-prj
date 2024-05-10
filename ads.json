@@ -61,7 +61,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.saml.flow": {}
+            "org.gluu.agama.saml.flow": {},
+            "org.gluu.agama.saml": {}
         },
         "name": "inbound-saml"
     }
