@@ -112,7 +112,7 @@ public class SamlService {
     private List<IdentityProvider> getIdpList() throws JsonProcessingException {
 
         logger.info("Fetch All IDP details");
-        String token = getToken();
+        String token = getToken(null);
         logger.info("Access token:{}", token);
 
         String idpUrl = samlUtil.getIdpUrl(this.serverUrl, this.idpUrl, this.realm);
@@ -142,9 +142,20 @@ public class SamlService {
     }
 
     public String processIDPResponse(Map<String, Object> responseData, String extIdpUrl)
-            throws JsonProcessingException {
+            throws JsonProcessingException,Exception {
         logger.info("\n\n\n responseData:{}, extIdpUrl:{} \n\n ", responseData, extIdpUrl);
-        String result = this.getExtIDPToken(extIdpUrl);
+
+        if(StringUtils.isBlank(extIdpUrl)) {
+            throw new Exception("External IDP URL is null!");
+        }
+        
+        if(responseData==null) {
+            throw new Exception("External IDP response is null!");
+        }
+        String code = (String) responseData.get("code");
+        logger.info("\n\n\n Code for externalIDP is {} \n\n ", code);
+        
+        String result = this.getExtIDPToken(extIdpUrl,code );
         logger.info("\n\n\n getExtIDPToken - result:{} \n\n ", result);
         return result;
     }
@@ -154,7 +165,7 @@ public class SamlService {
         try {
             logger.info("Fetch IDP details - idpAlias:{}, this.idpUrl:{}, samlConfig.getIdpUrl():{} ", idpAlias,
                     this.idpUrl, samlConfig.getIdpUrl());
-            String token = getToken();
+            String token = getToken(null);
             logger.info("Access token:{}", token);
 
             if (StringUtils.isBlank(idpAlias)) {
@@ -178,7 +189,7 @@ public class SamlService {
             throws JsonProcessingException, IOException {
 
         logger.info("Fetch IDP details - idpUrl:{}, idpList:{} ", idpUrl, idpList);
-        String token = getToken();
+        String token = getToken(null);
         logger.info("Access token:{}", token);
 
         if (idpList == null || idpList.isEmpty()) {
@@ -195,14 +206,14 @@ public class SamlService {
         return idpList;
     }
 
-    private String getExtIDPToken(String idpAlias) throws JsonProcessingException {
+    private String getExtIDPToken(String idpAlias, String code) throws JsonProcessingException {
 
-        logger.info("Fetch Ext IDP Response for idpAlias:{} ", idpAlias);
-        String token = getToken();
+        logger.info("Fetch Ext IDP Response for idpAlias:{}, code:{} ", idpAlias, code);
+        String token = getToken(code);
         logger.info("Token for IDP response is :{}", token);
 
         String url = samlUtil.getExtIDPTokenUrl(this.serverUrl, this.extIDPTokenUrl, this.realm, idpAlias);
-        logger.info("URL for Ext IDP response is :{}", url);
+        logger.info("\n\n\n URL for Ext IDP response is :{}", url);
 
         String idpJsonString = samlClient.getExtIDPTokenResponse(url, token);
         logger.info("Returning Ext IDP Response details idpJsonString:{}", idpJsonString);
@@ -210,11 +221,11 @@ public class SamlService {
         return idpJsonString;
     }
 
-    private String getToken() throws JsonProcessingException {
-        logger.info("Fetch Token for client");
+    private String getToken(String code) throws JsonProcessingException {
+        logger.info("Fetch Token for client - code:{}",code);
         String token = samlClient.getAccessToken(samlUtil.getTokenUrl(this.serverUrl, this.tokenUrl, this.realm),
                 this.clientId, this.clientSecret, this.grantType, this.scope, this.username, this.password,
-                this.serverUrl);
+                this.serverUrl, code);
         logger.info("Access token:{}", token);
         return token;
     }
