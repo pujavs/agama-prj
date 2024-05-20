@@ -43,9 +43,9 @@ public class SamlClient {
 
     public static String getAccessToken(final String tokenUrl, final String clientId, final String clientSecret,
             final String grantType, final String scope, final String username, final String password,
-            final String serverUrl) throws JsonProcessingException {
-        logger.info("Get  tokenUrl:{}, clientId:{}, grantType:{}, scope:{}, username:{}, serverUrl:{}", tokenUrl,
-                clientId, grantType, scope, username, serverUrl);
+            final String serverUrl, String code) throws JsonProcessingException {
+        logger.info("\n\n\n\n\n Get  tokenUrl:{}, clientId:{}, grantType:{}, scope:{}, username:{}, serverUrl:{}, code:{} \n\n\n\n", tokenUrl,
+                clientId, grantType, scope, username, serverUrl, code);
 
         Builder request = getClientBuilder(tokenUrl);
         request.header(AUTHORIZATION, "Basic " + clientId + ":" + clientSecret);
@@ -60,6 +60,7 @@ public class SamlClient {
         multivaluedHashMap.add("username", username);
         multivaluedHashMap.add("password", password);
         multivaluedHashMap.add("redirect_uri", serverUrl);
+        multivaluedHashMap.add("code", code);
         Response response = request.post(Entity.form(multivaluedHashMap));
 
         String token = null;
