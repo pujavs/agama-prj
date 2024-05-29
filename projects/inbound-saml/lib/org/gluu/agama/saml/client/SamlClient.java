@@ -44,7 +44,7 @@ public class SamlClient {
     public static String getAccessToken(final String tokenUrl, final String clientId, final String clientSecret,
             final String grantType, final String scope, final String username, final String password,
             final String serverUrl, String code) throws JsonProcessingException {
-        logger.info("\n\n\n\n\n Get  tokenUrl:{}, clientId:{}, grantType:{}, scope:{}, username:{}, serverUrl:{}, code:{} \n\n\n\n", tokenUrl,
+        logger.info("\n\n\n\n\n Get AccessToken params tokenUrl:{}, clientId:{}, grantType:{}, scope:{}, username:{}, serverUrl:{}, code:{} \n\n\n\n", tokenUrl,
                 clientId, grantType, scope, username, serverUrl, code);
 
         Builder request = getClientBuilder(tokenUrl);
@@ -59,7 +59,7 @@ public class SamlClient {
         multivaluedHashMap.add("scope", scope);
         multivaluedHashMap.add("username", username);
         multivaluedHashMap.add("password", password);
-        multivaluedHashMap.add("redirect_uri", serverUrl);
+        multivaluedHashMap.add("redirect_uri", "https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback");
         multivaluedHashMap.add("code", code);
         Response response = request.post(Entity.form(multivaluedHashMap));
 
