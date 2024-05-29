@@ -59,7 +59,7 @@ public class SamlClient {
         multivaluedHashMap.add("scope", scope);
         multivaluedHashMap.add("username", username);
         multivaluedHashMap.add("password", password);
-        multivaluedHashMap.add("redirect_uri", "https://pujavs-advanced-ewe.gluu.info/jans-auth/fl/callback");
+        multivaluedHashMap.add("redirect_uri", serverUrl);
         multivaluedHashMap.add("code", code);
         Response response = request.post(Entity.form(multivaluedHashMap));
 
