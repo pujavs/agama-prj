@@ -112,7 +112,7 @@ public class SamlService {
     private List<IdentityProvider> getIdpList() throws JsonProcessingException {
 
         logger.info("Fetch All IDP details");
-        String token = getToken(null);
+        String token = getAccessTokenFromUserCredentials();
         logger.info("Access token:{}", token);
 
         String idpUrl = samlUtil.getIdpUrl(this.serverUrl, this.idpUrl, this.realm);
@@ -165,7 +165,7 @@ public class SamlService {
         try {
             logger.info("Fetch IDP details - idpAlias:{}, this.idpUrl:{}, samlConfig.getIdpUrl():{} ", idpAlias,
                     this.idpUrl, samlConfig.getIdpUrl());
-            String token = getToken(null);
+            String token = getAccessTokenFromUserCredentials();
             logger.info("Access token:{}", token);
 
             if (StringUtils.isBlank(idpAlias)) {
@@ -189,7 +189,7 @@ public class SamlService {
             throws JsonProcessingException, IOException {
 
         logger.info("Fetch IDP details - idpUrl:{}, idpList:{} ", idpUrl, idpList);
-        String token = getToken(null);
+        String token = getAccessTokenFromUserCredentials();
         logger.info("Access token:{}", token);
 
         if (idpList == null || idpList.isEmpty()) {
@@ -209,7 +209,7 @@ public class SamlService {
     private String getExtIDPToken(String idpAlias, String code) throws JsonProcessingException {
 
         logger.info("Fetch Ext IDP Response for idpAlias:{}, code:{} ", idpAlias, code);
-        String token = getToken(code);
+        String token = getAccessTokenFromCode(code);
         logger.info("Token for IDP response is :{}", token);
 
         String url = samlUtil.getExtIDPTokenUrl(this.serverUrl, this.extIDPTokenUrl, this.realm, idpAlias);
@@ -221,10 +221,18 @@ public class SamlService {
         return idpJsonString;
     }
 
-    private String getToken(String code) throws JsonProcessingException {
-        logger.info("Fetch Token for client - code:{}",code);
+    private String getAccessTokenFromUserCredentials() throws JsonProcessingException {
         String token = samlClient.getAccessToken(samlUtil.getTokenUrl(this.serverUrl, this.tokenUrl, this.realm),
                 this.clientId, this.clientSecret, this.grantType, this.scope, this.username, this.password,
+                this.serverUrl, null);
+        logger.info("Access token:{}", token);
+        return token;
+    }
+    
+    private String getAccessTokenFromCode(String code) throws JsonProcessingException {
+        logger.info("Fetch Token for client - code:{}",code);
+        String token = samlClient.getAccessToken(samlUtil.getTokenUrl(this.serverUrl, this.tokenUrl, this.realm),
+                this.clientId, this.clientSecret, "authorization_code", this.scope, this.username, this.password,
                 this.serverUrl, code);
         logger.info("Access token:{}", token);
         return token;
