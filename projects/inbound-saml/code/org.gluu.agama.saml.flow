@@ -20,5 +20,5 @@ Log "@info Response data from external IDP is \n" samlResponse
 parsedResponse = Call samlService processIDPResponse samlResponse  providerId
 // Final result
 outcome = { success: true, data: parsedResponse }
-it_nypil = {success:true, data: { userId: "puja", property1: "value1"}}
-Finish it_nypil
+it_lewrm = {success:true, data: { userId: "puja", property1: "value1"}}
+Finish it_lewrm
