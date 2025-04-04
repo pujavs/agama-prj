@@ -17,33 +17,29 @@
                     "description": "My Jans issuer",
                     "openid_configuration_endpoint": "https://pujavs-sure-fox.gluu.info/.well-known/openid-configuration",
                     "tokens_metadata": {
-                        "access_tokens": {
-                            "trusted": false,
-                            "principal_identifier": "",
-                            "user_id": "",
-                            "role_mapping": "",
-                            "claim_mapping": {}
+                        "access_token": {
+                            "trusted": true,
+                            "entity_type_name": "Jans::Access_token",
+                            "user_id": "sub",
+                            "token_id": "jti",
+                            "workload_id": "client_id",
+                            "claim_mapping": {},
+                            "required_claims": [],
+                            "role_mapping": "role",
+                            "principal_mapping": [
+                                "Jans::Workload"
+                            ]
                         },
-                        "id_tokens": {
-                            "trusted": false,
-                            "principal_identifier": "",
-                            "user_id": "",
-                            "role_mapping": "",
-                            "claim_mapping": {}
-                        },
-                        "userinfo_tokens": {
-                            "trusted": false,
-                            "principal_identifier": "",
-                            "user_id": "",
-                            "role_mapping": "",
-                            "claim_mapping": {}
-                        },
-                        "tx_tokens": {
-                            "trusted": false,
-                            "principal_identifier": "",
-                            "user_id": "",
-                            "role_mapping": "",
-                            "claim_mapping": {}
+                        "id_token": {
+                            "trusted": true,
+                            "entity_type_name": "Jans::id_token",
+                            "user_id": "sub",
+                            "token_id": "jti",
+                            "role_mapping": "role",
+                            "claim_mapping": {},
+                            "principal_mapping": [
+                                "Jans::User"
+                            ]
                         }
                     }
                 }
