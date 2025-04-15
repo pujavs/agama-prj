@@ -14,6 +14,11 @@
                     "description": "",
                     "creation_date": "2025-04-09T09:33:00.855963",
                     "policy_content": "cGVybWl0KAogIHByaW5jaXBhbCBpcyBKYW5zOjpXb3JrbG9hZCwKICBhY3Rpb24gaW4gW0phbnM6OkFjdGlvbjo6IkdFVCJdLAogIHJlc291cmNlID09IEphbnM6OkhUVFBfUmVxdWVzdDo6IkFjcnNSZXNvdXJjZSIKKQp3aGVuIHsKICBwcmluY2lwYWwgaGFzIGFjY2Vzc190b2tlbi5zY29wZSAmJgogIHByaW5jaXBhbC5hY2Nlc3NfdG9rZW4uc2NvcGUuY29udGFpbnMoIkFDUl9SRUFEX0FDQ0VTUyIpCn07"
+                },
+                "a1967b240f99a7dd3dae7deada9fe35fda4ad9b8c826": {
+                    "description": "",
+                    "creation_date": "2025-04-15T09:17:45.706629",
+                    "policy_content": "QEFjcnNSZWFkCnBlcm1pdCgKICBwcmluY2lwYWwgaXMgSmFuczo6V29ya2xvYWQsCiAgYWN0aW9uIGluIFtKYW5zOjpBY3Rpb246OiJHRVQiXSwKICByZXNvdXJjZSA9PSBKYW5zOjpIVFRQX1JlcXVlc3Q6OiIvamFucy1jb25maWctYXBpL2FwaS92MS9hY3JzIgopCndoZW4gewogIHByaW5jaXBhbCBoYXMgYWNjZXNzX3Rva2VuLnNjb3BlICYmCiAgcHJpbmNpcGFsLmFjY2Vzc190b2tlbi5zY29wZS5jb250YWluc0FueShbImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvYWNycy5yZWFkb25seSIsImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvYWNycy53cml0ZSIsImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvcmVhZC1hbGwiXSkKfTs="
                 }
             },
             "trusted_issuers": {
