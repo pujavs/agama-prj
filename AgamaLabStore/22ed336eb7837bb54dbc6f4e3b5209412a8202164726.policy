@@ -1,7 +1,8 @@
 @AttributeUpdate
 permit(
   principal is Jans::Workload,
-  action in [Jans::Action::"PUT", Jans::Action::"PATCH"],
+  action in [Jans::Action::"PUT",
+  Jans::Action::"PATCH"],
   resource == Jans::HTTP_Request::"/jans-config-api/api/v1/attributes"
 )
 when {
