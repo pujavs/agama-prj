@@ -39,6 +39,11 @@
                     "description": "",
                     "creation_date": "2025-04-15T10:07:33.993433",
                     "policy_content": "QEF0dHJpYnV0ZVVwZGF0ZQpwZXJtaXQoCiAgcHJpbmNpcGFsIGlzIEphbnM6Oldvcmtsb2FkLAogIGFjdGlvbiBpbiBbSmFuczo6QWN0aW9uOjoiUFVUIl0sCiAgcmVzb3VyY2UgPT0gSmFuczo6SFRUUF9SZXF1ZXN0OjoiL2phbnMtY29uZmlnLWFwaS9hcGkvdjEvYXR0cmlidXRlcyIKKQp3aGVuIHsKICBwcmluY2lwYWwgaGFzIGFjY2Vzc190b2tlbi5zY29wZSAmJgogIHByaW5jaXBhbC5hY2Nlc3NfdG9rZW4uc2NvcGUuY29udGFpbnNBbnkoWyJodHRwczovL2phbnMuaW8vb2F1dGgvY29uZmlnL2F0dHJpYnV0ZXMud3JpdGUiLCJodHRwczovL2phbnMuaW8vb2F1dGgvY29uZmlnL3dyaXRlLWFsbCJdKQp9Ow=="
+                },
+                "7917c804a938719d488e2a9970f08b1e4bb575079dfa": {
+                    "description": "",
+                    "creation_date": "2025-04-15T10:09:34.358634",
+                    "policy_content": "QEF0dHJpYnV0ZVVwZGF0ZTIKcGVybWl0KAogIHByaW5jaXBhbCBpcyBKYW5zOjpXb3JrbG9hZCwKICBhY3Rpb24gaW4gW0phbnM6OkFjdGlvbjo6IlBVVCIsIEphbnM6OkFjdGlvbjo6IkdFVCJdLAogIHJlc291cmNlID09IEphbnM6OkhUVFBfUmVxdWVzdDo6Ii9qYW5zLWNvbmZpZy1hcGkvYXBpL3YxL2F0dHJpYnV0ZXMiCikKd2hlbiB7CiAgcHJpbmNpcGFsIGhhcyBhY2Nlc3NfdG9rZW4uc2NvcGUgJiYKICBwcmluY2lwYWwuYWNjZXNzX3Rva2VuLnNjb3BlLmNvbnRhaW5zQW55KFsiaHR0cHM6Ly9qYW5zLmlvL29hdXRoL2NvbmZpZy9hdHRyaWJ1dGVzLndyaXRlIiwiaHR0cHM6Ly9qYW5zLmlvL29hdXRoL2NvbmZpZy93cml0ZS1hbGwiXSkKfTs="
                 }
             },
             "trusted_issuers": {
