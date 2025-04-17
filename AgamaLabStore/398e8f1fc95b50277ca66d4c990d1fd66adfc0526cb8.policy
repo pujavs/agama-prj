@@ -1,0 +1,10 @@
+@CacheTypeGet
+permit(
+  principal is Jans::Workload,
+  action in [Jans::Action::"GET"],
+  resource == Jans::HTTP_Request::"/jans-config-api/api/v1/config/cache/in-memory"
+)
+when {
+  principal has access_token.scope &&
+  principal.access_token.scope.containsAny(["https://jans.io/oauth/config/cache.readonly","https://jans.io/oauth/config/cache.write","https://jans.io/oauth/config/read-all"])
+};
