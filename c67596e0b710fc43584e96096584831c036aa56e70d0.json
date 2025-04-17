@@ -69,11 +69,6 @@
                     "description": "",
                     "creation_date": "2025-04-16T11:00:32.705937",
                     "policy_content": "QFJlZGlzR2V0CnBlcm1pdCgKICBwcmluY2lwYWwgaXMgSmFuczo6V29ya2xvYWQsCiAgYWN0aW9uIGluIFtKYW5zOjpBY3Rpb246OiJHRVQiXSwKICByZXNvdXJjZSA9PSBKYW5zOjpIVFRQX1JlcXVlc3Q6OiIvamFucy1jb25maWctYXBpL2FwaS92MS9jb25maWcvY2FjaGUvcmVkaXMiCikKd2hlbiB7CiAgcHJpbmNpcGFsIGhhcyBhY2Nlc3NfdG9rZW4uc2NvcGUgJiYKICBwcmluY2lwYWwuYWNjZXNzX3Rva2VuLnNjb3BlLmNvbnRhaW5zQW55KFsiaHR0cHM6Ly9qYW5zLmlvL29hdXRoL2NvbmZpZy9jYWNoZS5yZWFkb25seSIsICJodHRwczovL2phbnMuaW8vb2F1dGgvY29uZmlnL2NhY2hlLndyaXRlIiwgImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvcmVhZC1hbGwiXSkKfTs="
-                },
-                "bb59b44315be1c03719afee4a661cbb2cd0302f0b459": {
-                    "description": "",
-                    "creation_date": "2025-04-17T07:36:56.942732",
-                    "policy_content": "QENhY2hlSW5NZW1vcnlHZXQKcGVybWl0KAogIHByaW5jaXBhbCBpcyBKYW5zOjpXb3JrbG9hZCwKICBhY3Rpb24gaW4gW0phbnM6OkFjdGlvbjo6IkdFVCJdLAogIHJlc291cmNlID09IEphbnM6OkhUVFBfUmVxdWVzdDo6Ii9qYW5zLWNvbmZpZy1hcGkvYXBpL3YxL2NvbmZpZy9jYWNoZS9pbi1tZW1vcnkiCikKd2hlbiB7CiAgcHJpbmNpcGFsIGhhcyBhY2Nlc3NfdG9rZW4uc2NvcGUgJiYKICBwcmluY2lwYWwuYWNjZXNzX3Rva2VuLnNjb3BlLmNvbnRhaW5zQW55KFsiaHR0cHM6Ly9qYW5zLmlvL29hdXRoL2NvbmZpZy9jYWNoZS5yZWFkb25seSIsImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvY2FjaGUud3JpdGUiLCJodHRwczovL2phbnMuaW8vb2F1dGgvY29uZmlnL3JlYWQtYWxsIl0pCn07Cg=="
                 }
             },
             "trusted_issuers": {
