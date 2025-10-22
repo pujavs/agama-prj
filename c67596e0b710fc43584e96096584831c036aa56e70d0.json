@@ -4,13 +4,7 @@
         "c67596e0b710fc43584e96096584831c036aa56e70d0": {
             "name": "ConfigAPIPolicyStore",
             "description": "ConfigAPI Policy Store",
-            "policies": {
-                "9e692f10f89e1e9eaea00e6819a7c1737bac9ad9453a": {
-                    "description": "",
-                    "creation_date": "2025-10-22T08:14:23.850438",
-                    "policy_content": "QEFjcnNSZWFkCnBlcm1pdCgKICBwcmluY2lwYWwgaXMgSmFuczo6V29ya2xvYWQsCiAgYWN0aW9uIGluIFtKYW5zOjpBY3Rpb246OiJHRVQiXSwKICByZXNvdXJjZSA9PSBKYW5zOjpIVFRQX1JlcXVlc3Q6OiIvamFucy1jb25maWctYXBpL2FwaS92MS9hY3JzIgopCndoZW4gewogIHByaW5jaXBhbCBoYXMgYWNjZXNzX3Rva2VuLnNjb3BlICYmCiAgcHJpbmNpcGFsLmFjY2Vzc190b2tlbi5zY29wZS5jb250YWluc0FueShbImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvYWNycy5yZWFkb25seSIsImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvYWNycy53cml0ZSIsImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvcmVhZC1hbGwiXSkKfTsK"
-                }
-            },
+            "policies": {},
             "trusted_issuers": {
                 "c5270fa75bfd967a75078ea9b6c9a6a2246c5354f1c5": {
                     "name": "Jans",
