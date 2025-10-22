@@ -5,11 +5,6 @@
             "name": "ConfigAPIPolicyStore",
             "description": "ConfigAPI Policy Store",
             "policies": {
-                "ce886a2f69d9416025db16913cc7db836c70654ded27": {
-                    "description": "",
-                    "creation_date": "2025-04-16T11:00:32.705937",
-                    "policy_content": "QFJlZGlzR2V0CnBlcm1pdCgKICBwcmluY2lwYWwgaXMgSmFuczo6V29ya2xvYWQsCiAgYWN0aW9uIGluIFtKYW5zOjpBY3Rpb246OiJHRVQiXSwKICByZXNvdXJjZSA9PSBKYW5zOjpIVFRQX1JlcXVlc3Q6OiIvamFucy1jb25maWctYXBpL2FwaS92MS9jb25maWcvY2FjaGUvcmVkaXMiCikKd2hlbiB7CiAgcHJpbmNpcGFsIGhhcyBhY2Nlc3NfdG9rZW4uc2NvcGUgJiYKICBwcmluY2lwYWwuYWNjZXNzX3Rva2VuLnNjb3BlLmNvbnRhaW5zQW55KFsiaHR0cHM6Ly9qYW5zLmlvL29hdXRoL2NvbmZpZy9jYWNoZS5yZWFkb25seSIsICJodHRwczovL2phbnMuaW8vb2F1dGgvY29uZmlnL2NhY2hlLndyaXRlIiwgImh0dHBzOi8vamFucy5pby9vYXV0aC9jb25maWcvcmVhZC1hbGwiXSkKfTs="
-                },
                 "398e8f1fc95b50277ca66d4c990d1fd66adfc0526cb8": {
                     "description": "",
                     "creation_date": "2025-04-17T07:46:55.817080",
