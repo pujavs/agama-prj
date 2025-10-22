@@ -5,11 +5,6 @@
             "name": "ConfigAPIPolicyStore",
             "description": "ConfigAPI Policy Store",
             "policies": {
-                "1eb0d16acd1d0f4a233ccc371a0c57f88a80e5112af3": {
-                    "description": "AdminPerformAnyOperationOnResource",
-                    "creation_date": "2025-04-04T13:24:59.310460",
-                    "policy_content": "QGlkKCJBZG1pblBlcmZvcm1BbnlPcGVyYXRpb25PblJlc291cmNlIikKcGVybWl0KAogIHByaW5jaXBhbCBpbiBKYW5zOjpSb2xlOjoiYWRtaW4iLAogIGFjdGlvbiwKICByZXNvdXJjZQopOw=="
-                },
                 "923d713e59641cf8845116e4f757200e5b7cc26d174c": {
                     "description": "",
                     "creation_date": "2025-04-09T09:33:00.855963",
