@@ -1,9 +1,9 @@
 {
-    "cedar_version": "4.3.0",
+    "cedar_version": "4.4.0",
     "policy_stores": {
         "c67596e0b710fc43584e96096584831c036aa56e70d0": {
-            "name": "AgamaLabStore",
-            "description": "My AgamaLabStore",
+            "name": "ConfigAPIPolicyStore",
+            "description": "ConfigAPI Policy Store",
             "policies": {
                 "1eb0d16acd1d0f4a233ccc371a0c57f88a80e5112af3": {
                     "description": "AdminPerformAnyOperationOnResource",
